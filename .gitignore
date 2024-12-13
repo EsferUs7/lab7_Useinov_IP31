@@ -7,6 +7,8 @@ venv/
 .env
 .venv
 .python-version
+/instance
+/lab-7
 
 *.log
 
