@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Display</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header container">
+            <h1 class="header-name">HELLO, WORLD!</h1>
+            <nav class="nav">
+                <a class="nav-item" href="{{ url_for('index') }}">MAIN</a>
+                <a class="nav-item" href="{{ url_for('display') }}">SECOND</a>
+            </nav>
+        </header>
+
+        <div class="left-part">
+            <h4>Header. Block-2</h4>
+            <img src="{{ url_for('static', filename='img/sunny-garden.png') }}" alt="sunny meadow" class="image-left-part">
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit consectetur eligendi incidunt
+                aliquam saepe quo aperiam. Aut molestiae incidunt nisi vitae hic ad atque esse laboriosam! Officiis,
+                at. Excepturi, odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit consectetur
+                eligendi incidunt</p>
+        </div>
+
+        <div class="middle-part">
+            <h4>Header. Block-3</h4>
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit consectetur eligendi incidunt
+                aliquam saepe quo aperiam. Aut molestiae incidunt nisi vitae hic ad atque esse laboriosam! Officiis,
+                at. Excepturi, odit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit consectetur
+                eligendi incidunt</p>
+        </div>
+
+        <div class="right-part">
+            <div class="right-grid-container">
+                <div class="right-part-header">
+                    <h4>Header. Block-4</h4>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam in neque, odio architecto,
+                        porro cupiditate voluptate suscipit dignissimos accusamus maxime libero, pariatur officia
+                        voluptatibus
+                        reiciendis similique nemo consequuntur dolor quisquam!</p>
+                    <img src="{{ url_for('static', filename='img/four-seasons-park.png') }}" alt="a park with trees; of all four seasons"
+                        class="image-right-part-header" usemap="#seasons">
+                </div>
+
+                <div class="left-info-bar">
+                    <h4>Header. Block-5</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis libero tempora vero
+                        blanditiis tempore maxime, eos saepe inventore minus quae placeat illum alias nostrum
+                        nesciunt quia dolor quidem! Accusamus!</p>
+                    <ol>
+                        <li>Lorem 1</li>
+                        <li>Lorem 2</li>
+                        <li>Lorem 3</li>
+                        <li>Lorem 4</li>
+                        <li>Lorem 5</li>
+                    </ol>
+                </div>
+
+                <div class="right-info-bar">
+                    <h4>Header. Block-6</h4>
+                    <ul>
+                        <li>Monday</li>
+                        <li>Tuesday</li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>Friday</li>
+                        <li>Saturday</li>
+                        <li>Sunday</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <ul>
+                    <li>Tel: +0-000-00-000-00</li>
+                    <li>E-mail: dontwriteus@fake.com</li>
+                </ul>
+                <h1>GOOD BYE, WORLD!</h1>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
